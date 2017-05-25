@@ -1,6 +1,6 @@
 ## LocalTum (localhost + momentum clone project)
 
-![](photo1.png)
+![](photo1.PNG)
 
 ### 이건 왜 만들었냐?
 
