@@ -16,6 +16,8 @@
 
     - 차라리 headless 브라우저 하나 띄워서 사용하는 방법도 있는데 그걸 사용하는게 훨 좋을껍니다.
 
+    - ~~경남여객의 혼을 담아서 한번 집앞을 지나갈 시간 예측 해보겠습니다~~
+
 ### 이거 사용하기 전에 셋팅 어떻게 하는겨?
 
 1. git clone 하시고
@@ -44,7 +46,7 @@ var token = {'aqi':'abcdedfefegeet12345', 'weather':'assahimeulnayasanda6666666'
 var location = {'weather':'48856', 'aqi':'korea/gyeonggi/suwon-si'};
 ```
 
-7. 이제 모듈을 설치하는데, `npm install express`, `npm install request` 커맨드창에 입력해서 설치하면 되고
+7. 이제 모듈을 설치하는데, `npm install express`, `npm install request`, `npm install pug` 커맨드창에 입력해서 설치하면 되고
 
 8. 지금 이 git 폴더에 왔다고 가정하고 `node start.js`를 입력한 후에 데이터 첫 동기화를 위하여 8초 정도 기다리면 됨
 
