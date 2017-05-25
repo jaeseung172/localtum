@@ -58,8 +58,9 @@ var location = {'weather':'48856', 'aqi':'korea/gyeonggi/suwon-si'};
 
 - 밤 9시 넘으면 앞에 있는 날씨를 내일 날씨로 바꿔서 알려주는걸로 할 계획 (기상청 동내예보 RSS를 사용하면 됨)
 
-- `내가 야구를 엄청 좋아하는데` 야구 경기가 열리면 자동으로 파싱해서 가져온 데이터를 뿌려주는 기능도 만들 계획, SSE(Server Side Events)라고 하는 기능이 있네!
+- `내가 야구를 엄청 좋아하는데` 야구 경기가 열리면 자동으로 파싱해서 가져온 데이터를 뿌려주는 기능도 만들 계획
 
+    - SSE(Server Side Events)라고 하는 기능이 있네!
 ### LICENSE ~~롸센스?~~ 
 
 ```javascript
