@@ -61,3 +61,10 @@ var location = {'weather':'48856', 'aqi':'korea/gyeonggi/suwon-si'};
 - `내가 야구를 엄청 좋아하는데` 야구 경기가 열리면 자동으로 파싱해서 가져온 데이터를 뿌려주는 기능도 만들 계획
 
 ~~아마 내일이면 또 수정하겠지~~
+
+### LICENSE ~~롸센스?~~ 
+
+```javascript
+var license = null;
+console.log("오픈입니다, 그냥 쓰세요");
+```
