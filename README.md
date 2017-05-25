@@ -12,17 +12,20 @@
 
     - API하나 신청하는데 빠릿빠릿하게 안나오고 한 일주일 정도 있어야 나옵니다 ㅠㅠ 
 
+    - 차라리 headless 브라우저 하나 띄워서 사용하는 방법도 있는데 그걸 사용하는게 훨 좋을껍니다.
+
 #### 이거 사용하기 전에 셋팅 어떻게 하는겨?
 
 1. git clone 하시고
 
 2. 7번, 8번 라인 보면 각각 AQICN, OpenWeatherMap API 설정하는 곳이 있음
+
 ```javascript
 var token = {'aqi':'YOUR_API_KEY', 'weather':'YOUR_API_KEY'};
 var location = {'weather':'YOUR_HOME_LOCATION', 'aqi':'YOUR_HOME_LOCATION'};
 ```
 
-3. API 키 발급은 무료, JSON 형식을 따라서 다음과 같이 설정하면 됨
+3. API 키 발급은 무료, JSON 형식을 따라서 6번 밑과 같이 설정하면 됨
 
 4. 그리고 weather 의 경우에는 5자리의 OpenWeatherMap 코드가 있음 그거 찾아서 복사해서 붙여넣으시고 (String), aqi는 다음에 따라서 복사해서 붙여넣으시면 됨.
 
@@ -41,6 +44,4 @@ var location = {'weather':'48856', 'aqi':'korea/gyeonggi/suwon-si'};
 
 9. 그러면 알아서 날씨는 2시간, 미세먼지는 1시간 반에 한번씩 알아서 동기화 됨
 
-10. 브라우저에서 localhost 입력해보면, **아주 심플하고, 간결하고, 깔끔한 페이지 하나가 뜲** 
-
-~~마치 이번년도 국정으로 위임되는게 아주우우우우 께끗한것처럼 말이야~~
+10. 브라우저에서 localhost 입력해보면, **아주 심플하고, 간결하고, 깔끔한 페이지 하나가 뜲**
