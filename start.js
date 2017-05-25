@@ -5,7 +5,6 @@ SEOND, YOU NEED TO SPECIFY YOUR LOCATION.
 */
 var express = require('express'); // import express
 var request = require('request'); // import request
-var cheerio = require('cheerio'); // import cheerio
 var pug = require('pug');
 var app = express(); // open context
 app.set('view engine', 'pug');
