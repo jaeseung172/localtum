@@ -109,7 +109,7 @@ function BusInfo(time){
     }
 }
 
-function SyncInfos(){
+function AQIInfos(){
     request("http://api.waqi.info/feed/"+location.aqi+"/?token="+token.aqi, function(request, error, body){
     //console.log(body);
     var returnjson = JSON.parse(body);
@@ -134,9 +134,9 @@ function GetRealtime(){
     return parseInt(String(date.getHours())+String('0'+date.getMinutes()).slice(-2));
 }
 
-setTimeout(function() {SyncInfos();}, 3000); // 3초 텀을 주고
+setTimeout(function() {AQIInfos();}, 3000); // 3초 텀을 주고
 setTimeout(function() {WeatherInfos();}, 5000); // 5초 텀 // 총 8초의 텀을 가져야 꼬이지 않고 실행이 됨.
-setInterval(function() {SyncInfos();}, 14400000); // 4시간마다 반복하도록 만들어주고
+setInterval(function() {AQIInfos();}, 5400000 ); // 1시간 30분마다 반복하도록 만들어주고
 setInterval(function() {WeatherInfos();}, 7200000); // 2시간마다 반복하도록 만들어줌
 
 app.get('/', function(req, res){
