@@ -65,5 +65,5 @@ var location = {'weather':'48856', 'aqi':'korea/gyeonggi/suwon-si'};
 
 ```javascript
 var license = null;
-console.log("오픈입니다, 그냥 쓰세요");
+console.log("우리집은 라이센스 그런거 취급 안한다네, BSD? GPL? 다 가라해~");
 ```
