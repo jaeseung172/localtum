@@ -34,7 +34,7 @@ var location = {'weather':'YOUR_HOME_LOCATION', 'aqi':'YOUR_HOME_LOCATION'};
 6. 그래서 다음과 같이 설정하면 **설정은 끝남**
 
 ```javascript
-var token = {'aqi':'abcdedfefegeet12345', 'weather':'YOUR_API_KEY'};
+var token = {'aqi':'abcdedfefegeet12345', 'weather':'assahimeulnayasanda6666666'};
 var location = {'weather':'48856', 'aqi':'korea/gyeonggi/suwon-si'};
 ```
 
