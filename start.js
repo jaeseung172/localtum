@@ -6,10 +6,9 @@ SEOND, YOU NEED TO SPECIFY YOUR LOCATION.
 var express = require('express'); // import express
 var request = require('request'); // import request
 var pug = require('pug');
+var config = require('./config.json')
 var app = express(); // open context
 app.set('view engine', 'pug');
-var token = {'aqi':'YOUR_API_KEY', 'weather':'YOUR_API_KEY'};
-var location = {'weather':'YOUR_HOME_LOCATION', 'aqi':'YOUR_HOME_LOCATION'};
 var weathercode = {200: '강한 비', 201: '강한 비', 202: '강한 비', 210: '강한 비', 211: '강한 비', 212: '강한 비', 221: '강한 비', 230: ' 강한 비', 231: '강한 비', 232: '강한 비', 300: '이슬비', 301: '이슬비', 302: '이슬비', 310: '이슬비', 311: '이슬비', 312: '이슬비', 313: '이슬비', 314: '이슬비', 321: '이슬비', 500: '비', 501: '비', 502: '비', 503: '비', 504: '비', 511: '비', 520: '비', 521: '비', 522: '비', 531: '비', 600: '눈', 601: '눈', 602: '눈', 611: '눈', 612: '눈', 615: '눈', 616: '눈', 620: '눈', 621: '눈', 622: '눈', 701: '안개', 702: '안개', 721: '안개', 731: '안개', 741: '안개', 751: '안개', 761: '안개', 762: '안개', 771: '안개', 781: '안개', 800: '맑음', 801: '구름 낌', 802: '구름 낌', 803: '구름 낌', 804: '구름 낌', 900: '토네이도', 901: '태풍', 902: '허리케인', 903: '폭한', 904: '폭염', 905: '바람 붐', 906: '우박', 951: '고요함', 952: '남실바람', 953: '산들바람', 954: '건들바람', 955: '흔들바람', 956: '된바람', 957: '강풍', 958: '강풍', 959: '강풍', 960: '폭풍', 961: '폭풍', 962: '허리케인'};
 var obj = {};
 
@@ -111,7 +110,7 @@ function BusInfo(time){
 }
 
 function AQIInfos(){
-    request("http://api.waqi.info/feed/"+location.aqi+"/?token="+token.aqi, function(request, error, body){
+    request("http://api.waqi.info/feed/"+config.aqiloc+"/?token="+config.aqikey, function(request, error, body){
     //console.log(body);
     var returnjson = JSON.parse(body);
     obj.AQI = returnjson.data.aqi;
@@ -122,7 +121,7 @@ function AQIInfos(){
 }
 
 function WeatherInfos(){
-    request("http://api.openweathermap.org/data/2.5/weather?id="+location.weather+"&APPID="+token.weather, function(request, error, body){
+    request("http://api.openweathermap.org/data/2.5/weather?id="+config.ownloc+"&APPID="+config.ownkey, function(request, error, body){
     var jsonresp = JSON.parse(body);
     obj.WEATHERCODE = parseInt(jsonresp.weather[0].id);
     obj.WEATHERKORDESC = weathercode[obj.WEATHERCODE];

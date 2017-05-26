@@ -30,61 +30,69 @@
 
 - **[작업중]** 기상청 RSS 동네예보 가져와서 표시해주기
 
-### 이건 왜 만들었냐?
+### 소개
 
-- 그냥 심심해서요 ~~코드쓰는 손이 근질근질해서 그렇습니다~~
+- 크롬에서 모멘텀 사용하고 있었는데 돈내라는게 많아서 제 손으로 만들었습니다, 모멘텀하고 좀 다르죠? 제가 좀 필요한것만 넣어서 만들었습니다
 
-- 노드도 공부해볼겸
+- 데이터는요
 
-- 모멘텀은 유료지만, 이건 오픈에다가, 심플합니다, 시간도 없고, 날씨, 버스정보, 미세먼지 만 파싱합니다
+    - 날씨 데이터는 OpenWeatherMap에서 가져오구요 **[API무료]**
 
-- 버스는 버스정보시스템의 것을 가져와서 사용할려고 했지만 그냥 15분 정도 노가다를 해서 시간표 알아내서 그거 가지고 평균시간 구해서 사용하고 있습니다.
+        - 케이웨더 서볼려고 했는데 신청하고 좀 기다려야 해서 안 씁니다
 
-    - API하나 신청하는데 빠릿빠릿하게 안나오고 한 일주일 정도 있어야 나옵니다 ㅠㅠ 
+        - OWM만 사용해도 차고 넘칩니다
 
-    - 차라리 headless 브라우저 하나 띄워서 사용하는 방법도 있는데 그걸 사용하는게 훨 좋을껍니다.
+    - 미세먼지 데이터는 AQICN에서 가져오고 있습니다 **[API무료]**
 
-    - ~~경남여객의 혼을 담아서 한번 집앞을 지나갈 시간 예측 해보겠습니다~~
+- DB는 사용하고 있지 않습니다 
 
-### 이거 사용하기 전에 셋팅 어떻게 하는겨?
+    - JSON만 사용해도 차고 넘칠꺼 같아서 사용 안하고 있습니다
 
-1. git clone 하시고
+    - 만약에 사용한다면 CouchDB 사용할 예정입니다
 
-2. 7번, 8번 라인 보면 각각 AQICN, OpenWeatherMap API 설정하는 곳이 있음
+- node.js에서 express, request 사용해서 만들었습니다
 
-```javascript
-var token = {'aqi':'YOUR_API_KEY', 'weather':'YOUR_API_KEY'};
-var location = {'weather':'YOUR_HOME_LOCATION', 'aqi':'YOUR_HOME_LOCATION'};
-```
+### 설치 & 셋팅방법
 
-3. API 키 발급은 무료, JSON 형식을 따라서 6번 밑과 같이 설정하면 됨
+1. `git clone` 하세요.
 
-4. 그리고 weather 의 경우에는 5자리의 OpenWeatherMap 코드가 있음 그거 찾아서 복사해서 붙여넣으시고 (String), aqi는 다음에 따라서 복사해서 붙여넣으시면 됨.
+2. 그 폴더에 이동하세요
 
-5. 구글에서 적절하게 `aqicn 사는곳` 검색하면 다음과 같은 링크가 보이는데, 이걸 Korea부터 쫙 끝까지 복사+붙여넣기 하면 됨.
+3. `node`가 설치되어있다는 가정하에
 
-    - 경기도 수원시를 예로 들면: http://aqicn.org/map/korea/gyeonggi/suwon-si/
+    - npm install 을 하세요, `express`와 `request`가 설치되어 있어야 합니다
 
-    - 그럼 여기에서 `korea/gyeonggi/suwon-si` 만 복사해서 붙여넣으면 됩니다. 참 쉽죠?
+    - Aqicn.org 에 가셔서 API를 발급받으세요, 무료에요.
 
-6. 그래서 다음과 같이 설정하면 **설정은 끝남**
+    - OpenWeatherMap 에 가셔서 API를 발급받으세요, 무료에요.
 
-```javascript
-var token = {'aqi':'abcdedfefegeet12345', 'weather':'assahimeulnayasanda6666666'};
-var location = {'weather':'48856', 'aqi':'korea/gyeonggi/suwon-si'};
-```
+    - 최 상단에 위치한 `config.json`을 만져야 합니다.
 
-7. 이제 모듈을 설치하는데, `npm install express`, `npm install request`, `npm install pug` 커맨드창에 입력해서 설치하면 되고
+        - 앞에서 발급받으신 두 키를 복사해서, aqicn에서 발급받으신 키는 `aqikey`에다가 복사하시고.
 
-8. 지금 이 git 폴더에 왔다고 가정하고 `node start.js`를 입력한 후에 데이터 첫 동기화를 위하여 8초 정도 기다리면 됨
+        - OpenWeatherMap 에서 발급받으신 키는, `owmkey`에다가 복사해 넣어주세용
 
-9. 그러면 알아서 날씨는 2시간, 미세먼지는 1시간 반에 한번씩 알아서 동기화 됨
+        - 그리고 위치 설정은 다음과 같이 하면 됩니다, 
 
-10. 브라우저에서 localhost 입력해보면, **아주 심플하고, 간결하고, 깔끔한 페이지 하나가 뜲**
+            - aqicn 사이트에 들어가셔서 오른쪽 검색창에 검색을 해봅니다, 내가 용인에 살고있으면 yongin 이라고 입력하면 결과가 주르륵 나오는데 그것 중 선택하시면 다음과 같은 주소로 이동이 되요.
 
-### LICENSE ~~롸센스?~~ 
+            - http://aqicn.org/city/korea/gyeonggi/yongin-si/ 
 
-```javascript
-var license = null;
-console.log("우리집은 라이센스 그런거 취급 안한다네, BSD? GPL? 다 가라해~");
-```
+            - 그럼 여기에서 city를 뒤로 하고, `korea/gyeonggi/yongin-si`를 복사해주세요 **반드시 앞에 / 를 빼고, 뒤에도 / 를 빼고 복사해주세요!**
+
+            - 그런 다음에 `aqiloc`에다가 붙여넣어 주세요!, 반드시 `"korea/gyeonggi/yongin-si"` 와 같이 붙여넣어 주셔야 합니다
+
+            - 그럼 이제 OpenWeatherMap을 봐야 합니다, [사이트](https://openweathermap.org/)에 들어가셔서 앞에 있는 `your city name`에 영문으로 도시 이름을 넣고 검색하세요, 저는 위와 같이 yongin을 넣고 검색합니다.
+
+            - 그럼 검색 결과로 `yongin`이 뜨는데요, 들어가시면 다음과 비슷한 URL이 뜹니다
+
+            - https://openweathermap.org/city/1832427
+
+                - 그럼 여기에서 뒤에 있는 7자리 숫자를 복사해서, `config.json`에 있는 `owmloc`에다가 붙여넣어 줍니다.
+
+    - 그럼 이제 위치 설정은 끝이 났구요, 명령 프롬프트 혹은 터미널에서 `npm start`를 입력하시면 실행 됩니다.
+
+    - 데이터 다운로드 때문에 한 10초 정도만 기다리시면 됩니다, 시간 동기화는 프로그램에서 알아서 `1시간 30분`, `2시간`에 한번씩 할껍니다.
+
+    - 그럼 자신이 좋아하는 웹 브라우저로 `http://localhost` 를 입력하세요, 그럼 위와 같이 이쁜 화면이 나올껍니다.
+
