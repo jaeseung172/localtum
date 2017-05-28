@@ -130,28 +130,6 @@ function WeatherInfos(){
 });
 }
 
-function GetAllergyInfo(){
-    request('http://www.kma.go.kr/weather/lifenindustry/li_asset/popup/imgdata_popup.jsp?CODE=D04&point=0', function(error, response, body){
-    var $ = cheerio.load(body, {decodeEntities: false});
-    // 여기서 알아냈음, 이 라이브러리가 인코딩을 해대니까 이상하게 보이는 거였음
-    // 그래서 설정값에 브라켓으로 걸고, false를 걸어주면 딱! 해결됨.
-    var yongin_rate = $('body table.viewDataT tr').eq(14).find('td').eq(0).text();
-    if (yongin_rate == '낮음'){
-        obj.allergyrate = 0;
-    }
-    else if (yongin_rate == '보통'){
-       obj.allergyrate = 1;
-    }
-    else if (yongin_rate == '높음'){
-       obj.allergyrate = 2;
-    }
-    else if (yongin_rate == '매우높음'){
-       obj.allergyrate = 3;
-    }
-});
-console.log("Sucessfully Get Allergy Information!");
-}
-
 function GetRealtime(){
     var date = new Date();
     return parseInt(String(date.getHours())+String('0'+date.getMinutes()).slice(-2));
