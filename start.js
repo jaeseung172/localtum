@@ -44,7 +44,7 @@ function BusInfo(time){
     if (630 <= time && time <= 655) {
         return "상행, 7:40";
     }
-    else if (730 <= time && time <= 740) {
+    else if (730 <= time && time <= 740){
         return "버스 내려오니 지금 나가요";
     }
     else if (800 <= time && time <= 825){
