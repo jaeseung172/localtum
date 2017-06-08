@@ -52,6 +52,8 @@ Weather Data from [OpenWeatherMap](http://openweathermap.org) API [**You Shoud g
 - First. You need to clone this Repository, just type `git clone https://github.com/jaeseung172/localtum` on your console.
 
 - Second. `npm install` to Install Dependency to run this app
+> ### Dependency
+> express, request, ~~pug~~
 
 - Third. `npm start` to Run the Engine.
 
