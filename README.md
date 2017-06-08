@@ -54,6 +54,7 @@ Weather Data from [OpenWeatherMap](http://openweathermap.org) API [**You Shoud g
 - Second. `npm install` to Install Dependency to run this app
 > ### Dependency
 > express, request, ~~pug~~
+> I've Removed Pug! Cause I dont have any reason to use Pug!
 
 - Third. `npm start` to Run the Engine.
 
