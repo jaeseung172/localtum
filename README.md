@@ -1,5 +1,11 @@
 # Welcome to StartPage!
 
+### Template
+
+- From W3.CSS Template
+
+- Font is [Exo @ Google](https://fonts.google.com/specimen/Exo?selection.family=Exo)
+
 ### Support Browser
 
 Browser|Tested|How to Install?
@@ -44,9 +50,9 @@ Mac|Will Be Run Smoothly
 	
 	- There are no External Module, It's Pure (or Like Crystal!)
 
-### Please Donate!
+### Donate!
 
-- Please Donate me for Support Mac System :)
+- Please Donate me for Get Mac System :)
 
 	- ADDRESS: 18xJLKffgahZCychCNyrMPfUGqb7UTaCLS
 	
@@ -55,3 +61,11 @@ Mac|Will Be Run Smoothly
 - Contact Me if you want to Donate Directly :) 
 
 	- Email Address: jaeseung172.crb@gmail.com
+	
+## LICENSE 
+
+- [I Dont Care EEEEEEE](https://www.youtube.com/watch?v=4MgAxMO1KD0)
+
+	- Just clone and make your version!
+	
+	- And Don't forget to Donate! Please!
