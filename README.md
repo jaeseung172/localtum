@@ -49,6 +49,8 @@ Mac|Will Be Run Smoothly
 	- Just Clone and `npm start` or `node start.js`
 	
 	- There are no External Module, It's Pure (or Like Crystal!)
+	
+	- It will Run at `port 80`
 
 ### Donate!
 
