@@ -12,4 +12,4 @@ MAC|**DOES NOT HAVE MAC** / IT WILL BE RUN SMOOTHLY!
 
 	- ADDRESS: 18xJLKffgahZCychCNyrMPfUGqb7UTaCLS
 	
-	- QR CODE: ![](bitcoinqrcode.png)
+	- QR CODE: <br /> ![](bitcoinqrcode.png)
