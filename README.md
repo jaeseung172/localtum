@@ -1,6 +1,6 @@
 # Welcome to StartPage!
 
-### Template
+### Browser Side Template
 
 - From W3.CSS Template
 
