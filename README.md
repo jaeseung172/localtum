@@ -44,7 +44,7 @@ Mac|Will Be Run Smoothly
 		
 		- For Stable Version
 		
-- It's Finish! No Need for Install External Sources. <br /> ![](whoami.jpg)
+- It's Finish! No Need for Install External Sources. <br /> ![](whoami.jpg) <br /> Image Source [@ Who Am I - Kein System ist sicher](http://www.imdb.com/title/tt3042408)
 
 	- Just Clone and `npm start` or `node start.js`
 	
