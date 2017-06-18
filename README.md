@@ -5,6 +5,12 @@
 - From W3.CSS Template
 
 	- Modified 
+	
+	- Image From 
+	
+		- Midtown Manhattan skyline, night view! New York 1930s - [@cobravictor](https://flic.kr/p/dqci3x)
+	
+- JQUERY FOR Query JSON Data
 
 ### Support Browser
 
@@ -44,7 +50,7 @@ Mac|Will Be Run Smoothly
 		
 		- For Stable Version
 		
-- It's Finish! No Need for Install External Sources. <br /> ![](whoami.jpg) <br /> Image Source [@ Who Am I - Kein System ist sicher](http://www.imdb.com/title/tt3042408)
+- It's Finish! No Need for Install External Sources. <br /> ![](./image/whoami.jpg) <br /> Image Source [@ Who Am I - Kein System ist sicher](http://www.imdb.com/title/tt3042408)
 
 	- Just Clone and `npm start` or `node start.js`
 	
@@ -61,7 +67,7 @@ Mac|Will Be Run Smoothly
 
 	- ADDRESS: 18xJLKffgahZCychCNyrMPfUGqb7UTaCLS
 	
-	- QR CODE: <br /> ![](bitcoinqrcode.png)
+	- QR CODE: <br /> ![](./image/bitcoinqrcode.png)
 	
 - Contact Me if you want to Donate Directly :) 
 

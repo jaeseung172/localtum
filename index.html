@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>New Tab</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script>
+</script>
+<script>
+function Clock() {
+    var today = new Date();
+    var h = today.getHours() % 12 || 12;
+    var m = today.getMinutes();
+    document.getElementById('TimeBox').innerHTML = h + ":" + m;
+	document.getElementById("Indicator").innerHTML = "<b>"+Ment(today.getHours())+"</b>";
+    var t = setTimeout(Clock, 500);
+}
+function Ment(hour){
+	if (0 <= hour < 6){
+		return "Good Midnight!";
+	}
+	else if (6 <= hour < 12){
+		return "Good Morning!";
+	}
+	else if (12 <= hour < 20){
+		return "Good Afternoon!";
+	}
+	else if (20 <= hour <= 23){
+		return "Good Night!";
+	}
+}
+</script>
+<script>
+var myjson;
+$.getJSON("http://localhost:3800", function(data){
+	data.temp = Math.floor(data.temp - 273.15);
+	myjson = data;
+	document.getElementById("City").innerHTML = myjson.loc;
+});
+function mouseover(){
+	document.getElementById("City").innerHTML = myjson.temp+"&#8451; / "+myjson.aqi+"aq";
+}
+function mouseout(){
+	document.getElementById("City").innerHTML = myjson.loc;
+}
+</script>
+<style>
+body,h1 {font-family: sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('8150080687_12a2b9377f_h.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+</style>
+</head>
+<body onload="Clock()">
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topright w3-padding-large w3-xlarge" id="City" onmouseover="mouseover()" onmouseout="mouseout()"></div>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo" id="TimeBox"></h1>
+    <h2 class="w3-center" id="Indicator"></h2>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+	Midtown Manhattan skyline, night view! New York 1930s - <a href="https://flic.kr/p/dqci3x" target="_blank">@cobravictor</a>
+  </div>
+  <div class="w3-display-bottomright w3-padding-large">
+    <a href="https://www.github.com/jaeseung172/localtum/blob/master/README.md" target="_blank">Information & Copyright</a>
+  </div>
+</div>
+</body>
+</html>
