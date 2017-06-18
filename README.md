@@ -4,7 +4,7 @@
 
 - From W3.CSS Template
 
-- Font is [Exo @ Google](https://fonts.google.com/specimen/Exo?selection.family=Exo)
+	- Modified 
 
 ### Support Browser
 
@@ -44,7 +44,7 @@ Mac|Will Be Run Smoothly
 		
 		- For Stable Version
 		
-- It's Finish! No Need for Install External Sources.
+- It's Finish! No Need for Install External Sources. <br /> ![](whoami.jpg)
 
 	- Just Clone and `npm start` or `node start.js`
 	
@@ -53,8 +53,7 @@ Mac|Will Be Run Smoothly
 	- It will Run at `port 3800`
 		
 		- My Favorite Airplane is `Airbus A380` Ha!
-		
-		- But Have not get that airplane Ha!
+
 
 ### Donate!
 
@@ -74,4 +73,4 @@ Mac|Will Be Run Smoothly
 
 	- Just clone and make your version!
 	
-	- And Don't forget to Donate! Please!
+	- And Please Don't forget to Donate!
