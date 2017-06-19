@@ -16,7 +16,7 @@
 
 Just Setup as start page to use it, I will making an Chrome Version of Module.
 
-(Opera Does not Support New Tab Extension (**I TRIED**), FireFox is Support this [Function](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/manifest.json/chrome_url_overrides))
+(Unforuneately, Opera Does not Support New Tab Extension (**I TRIED**), FireFox is Support this [Function](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/manifest.json/chrome_url_overrides))
 
 ### Support OS
 
@@ -56,6 +56,26 @@ Mac|Will Be Run Smoothly
 	
 	- Run `npm config` **Second!**
 	
+		- **FIRST** YOU SHOULD SIGN IN OPENWEATHERMAP
+		
+			- DONT WARRY! It's FREE
+			
+			- COPY & PASTE WHEN YOUR CONFIG PROGRAM ASKS YOUR OWM'S API KEY
+			
+			- Go to your Account Settings -> Click API Keys on Top -> Copy <br /> ![](./image/owm_instruction.png)
+			
+		- **SECOND** YOU SHOULD SIGN IN AQICN.ORG
+		
+			- DONT WARRY! IT's FREE
+			
+			- COPY & PASTE WHEN YOUR CONFIG PROGRAM ASKS YOUR AQICN'S API KEY
+			
+				- First, Request an [Data Key](http://aqicn.org/data-platform/token/#/)
+				
+				- ![](./image/aqi_instruction.png)
+				
+				- Second, When youre click url On Response Email, It'll appear Token page, copy it and paste to console
+	
 	- Run `npm start` **Third**
 	
 	- **IT MUST BE RUN THIS STEP, IT WILL MAKE AN ERROR**
@@ -67,9 +87,13 @@ Mac|Will Be Run Smoothly
 
 	- Cause I don't have a Mac :cry: :cry: :cry: <br /> ![](./image/donate.jpg)
 
-	- ADDRESS: 18xJLKffgahZCychCNyrMPfUGqb7UTaCLS
+	- Bitcoin ADDRESS: 18xJLKffgahZCychCNyrMPfUGqb7UTaCLS
 	
-	- QR CODE: <br /> ![](./image/bitcoinqrcode.png)
+	- Bitcoin QR CODE: <br /> ![](./image/bitcoinqrcode.png)
+	
+	- Donaitor List
+	
+		- `No one :cry:`
 	
 - Contact Me if you want to Donate Directly :) 
 

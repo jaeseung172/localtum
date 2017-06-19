@@ -18,16 +18,16 @@ function Clock() {
     var t = setTimeout(Clock, 500);
 }
 function Ment(hour){
-	if (0 <= hour < 6){
+	if (0 <= hour && hour < 6){
 		return "Good Midnight!";
 	}
-	else if (6 <= hour < 12){
+	else if (6 <= hour && hour  < 12){
 		return "Good Morning!";
 	}
-	else if (12 <= hour < 20){
+	else if (12 <= hour && hour < 20){
 		return "Good Afternoon!";
 	}
-	else if (20 <= hour <= 23){
+	else if (20 <= hour && hour <= 23){
 		return "Good Night!";
 	}
 }
