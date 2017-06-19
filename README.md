@@ -14,18 +14,16 @@
 
 ### Support Browser
 
-Browser|Tested|How to Install?
----|---|---
-Chrome|**TESTED**|ASAP for Instructions
-Opera|**TESTED**|ASAP for Instructions
-FireFox|**TESTED**|ASAP for Instructions
+Just Setup as start page to use it, I will making an Chrome Version of Module.
+
+(Opera Does not Support New Tab Extension (**I TRIED**), FireFox is Support this [Function](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/manifest.json/chrome_url_overrides))
 
 ### Support OS
 
 OS|Detail
 ---|---
-Windows|Support
-Linux|Support
+Windows|Support - Tested on Windows 10
+Linux|Support - Tested on UBUNTU 16.04
 Mac|Will Be Run Smoothly
 
 (If you found an error on Mac, Please Report An Error. I don't have an MAC.. Sorry!)
@@ -50,20 +48,24 @@ Mac|Will Be Run Smoothly
 		
 		- For Stable Version
 		
-- It's Finish! No Need for Install External Sources. <br /> ![](./image/whoami.jpg) <br /> Image Source [@ Who Am I - Kein System ist sicher](http://www.imdb.com/title/tt3042408)
-
-	- Just Clone and `npm start` or `node start.js`
+- `npm` config and run process 
 	
-	- There are no External Module, It's Pure (or Like Crystal!)
+	- Run `npm install` **First!**
 	
-	- It will Run at `port 3800`
-		
-		- My Favorite Airplane is `Airbus A380` Ha!
+		- `scanf` module
+	
+	- Run `npm config` **Second!**
+	
+	- Run `npm start` **Third**
+	
+	- **IT MUST BE RUN THIS STEP, IT WILL MAKE AN ERROR**
 
 
 ### Donate!
 
-- Please Donate me for Get Mac System :)
+- Please Donate Me!
+
+	- Cause I don't have a Mac :cry: :cry: :cry: <br /> ![](./image/donate.jpg)
 
 	- ADDRESS: 18xJLKffgahZCychCNyrMPfUGqb7UTaCLS
 	

@@ -1,16 +1,17 @@
 {
   "name": "localtum",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "localhost + momentum",
-  "main": "start.js",
+  "main": "localtum.js",
   "scripts": {
-    "start": "node start.js",
-    "install": "npm install express && npm install request"
+	"install": "npm install scanf",
+    "start": "node localtum.js",
+	"config": "node Setup.js"
   },
   "repository": {
     "type": "git",
     "url": "github.com/jaeseung172/localtum"
   },
   "author": "SEUNGWOO LEE",
-  "license": "ISC"
+  "license": "IDONCAREEEE"
 }
