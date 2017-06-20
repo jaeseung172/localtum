@@ -1,4 +1,24 @@
-# Welcome to StartPage!
+# Welcome to LocalTum
+
+[Brief Video About LocalTum(YouTube @ 720p 48fps)](https://youtu.be/O1tpNngIbfI)
+
+### Support Function
+
+- Weather Celcious
+
+	- Will Be ADD Weather Condition ASAP
+
+- Air Quality Index
+
+	- Will Be ADD AQI Condition ASAP
+	
+### Future Update
+
+- Transport Information
+
+	- Subway
+	
+	- Buses
 
 ### Browser Side Template
 

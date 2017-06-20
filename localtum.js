@@ -9,7 +9,7 @@ var key = require('./key.json');
 var infos = {}; // store data
 
 function Get_Weather_info(){
-	http.get('http://api.openweathermap.org/data/2.5/weather?lat='+key.lat+'&lon='+key.lon+'&appid='+key.owmkey, function(res) {
+	http.get('http://api.openweathermap.org/data/2.5/weather?lat='+key.lat+'&lon='+key.lon+'&appid='+key.ownkey, function(res) {
 		var body = ''; 
 	res.on('data', function(data){
 		body += data;
@@ -24,7 +24,7 @@ function Get_Weather_info(){
 }
 
 function Get_Aqi_Info(){
-	http.get("http://api.waqi.info/feed/geo:"+key.lat+":"+key.lon+"/?token="+key.aqikey, function(res) {
+	http.get("http://api.waqi.info/feed/geo:"+key.lat+";"+key.lon+"/?token="+key.aqikey, function(res) {
 		var body = '';
 	res.on('data', function(data){
 		body += data;

@@ -10,7 +10,7 @@ http.get("http://ipinfo.io/json", function(res) {
 		var parsed = JSON.parse(body);
 		var geoloc = parsed.loc.split(',');
 		credinfo['lat'] = parseFloat(geoloc[0]);
-		credinfo['long'] = parseFloat(geoloc[1]);
+		credinfo['lon'] = parseFloat(geoloc[1]);
 		console.log("PLEASE PRESS YOUR OPENWEATHERMAP API KEY");
 		var owmkey = scanf("%s");
 		console.log("PLEASE PRESS YOUR AQICN API KEY");

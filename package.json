@@ -4,14 +4,13 @@
   "description": "localhost + momentum",
   "main": "localtum.js",
   "scripts": {
-	"install": "npm install scanf",
-    "start": "node localtum.js",
-	"config": "node Setup.js"
+	"install": "npm install scanf -g && node Setup.js",
+    "start": "node localtum.js"
   },
   "repository": {
     "type": "git",
     "url": "github.com/jaeseung172/localtum"
   },
   "author": "SEUNGWOO LEE",
-  "license": "IDONCAREEEE"
+  "license": "ISC"
 }
