@@ -1,4 +1,6 @@
-# Welcome to LocalTum
+# Welcome to LocalTum (LocalHost Server + Momentum)
+
+![](./image/screen_photo.png)
 
 [Brief Video About LocalTum(YouTube @ 720p 48fps)](https://youtu.be/O1tpNngIbfI)
 
@@ -19,6 +21,10 @@
 	- Subway
 	
 	- Buses
+
+- Auto Image Change
+	
+	- May From Fliker
 
 ### Browser Side Template
 
@@ -46,7 +52,11 @@ Windows|Support - Tested on Windows 10
 Linux|Support - Tested on UBUNTU 16.04
 Mac|Will Be Run Smoothly
 
-(If you found an error on Mac, Please Report An Error. I don't have an MAC.. Sorry!)
+(If you found an error on Mac, Please Report An Error. I doesn't have an MAC.. Sorry!)
+
+Server is Very LightWeight, It Eats ~10MB of RAM.
+
+(My First Version is 50MB, Because It uses Express, requst, pug / But Now, It Just Use standard `http` library)
 
 ### Install node.js server for serving back-end data
 
@@ -56,7 +66,7 @@ Mac|Will Be Run Smoothly
 	
 		- https://nodejs.org/en/download/
 		
-		- For Stable Version.
+		- Links For Stable Version.
 	
 	- **For Linux**: Follow This Instructions for Specified Linux Distribution.
 	
@@ -66,7 +76,7 @@ Mac|Will Be Run Smoothly
 	
 		- https://nodejs.org/en/download/
 		
-		- For Stable Version
+		- Links For Stable Version
 		
 - `npm` config and run process 
 	
@@ -74,7 +84,7 @@ Mac|Will Be Run Smoothly
 	
 		- `scanf` module
 	
-	- Run `npm config` **Second!**
+	- Run `node Setup.js` **Second!**
 	
 		- **FIRST** YOU SHOULD SIGN IN OPENWEATHERMAP
 		
@@ -96,7 +106,9 @@ Mac|Will Be Run Smoothly
 				
 				- Second, When youre click url On Response Email, It'll appear Token page, copy it and paste to console
 	
-	- Run `npm start` **Third**
+	- Run `node localtum.js` **Third**
+	
+		- And Open `index.html` on `web` folder
 	
 	- **IT MUST BE RUN THIS STEP, IT WILL MAKE AN ERROR**
 
@@ -113,7 +125,7 @@ Mac|Will Be Run Smoothly
 	
 	- Donaitor List
 	
-		- `No one :cry:`
+		- `No one` :cry:
 	
 - Contact Me if you want to Donate Directly :) 
 
@@ -121,7 +133,7 @@ Mac|Will Be Run Smoothly
 	
 ## LICENSE 
 
-- [I Dont Care EEEEEEE](https://www.youtube.com/watch?v=4MgAxMO1KD0)
+- [I Dont Care](https://www.youtube.com/watch?v=4MgAxMO1KD0)
 
 	- Just clone and make your version!
 	
